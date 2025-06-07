@@ -12,7 +12,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install pytest
+          # Add other pip packages here if needed (e.g., sigmac, etc)
+
       - name: CI stub
         run: echo "CI workflow stub."
+
       - name: Run tests
-        run: make test-rules 
+        run: make test-rules
