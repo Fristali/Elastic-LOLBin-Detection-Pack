@@ -1,0 +1,28 @@
+# Placeholder for Sigma rule: Certutil 
+title: Suspicious Certutil Remote Download
+id: 1a2b3c4d-0002-0000-0000-000000000002
+status: experimental
+description: Detects Certutil downloading files from remote URLs (LOLBin technique)
+author: Elastic LOLBin Pack
+logsource:
+  product: windows
+  service: security
+  category: process_creation
+detection:
+  selection:
+    process: 'certutil.exe'
+    args|contains: 'http'
+  condition: selection
+fields:
+  - host
+  - process
+  - args
+  - attack
+falsepositives:
+  - Legitimate certificate management
+level: high
+references:
+  - https://attack.mitre.org/techniques/T1105/
+  - https://docs.microsoft.com/en-us/windows-server/security/
+mitre_attack:
+  - T1105 

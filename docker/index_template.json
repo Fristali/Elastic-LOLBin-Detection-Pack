@@ -1,0 +1,14 @@
+{
+  "index_patterns": ["logs-lolbin-*"] ,
+  "template": {
+    "mappings": {
+      "properties": {
+        "@timestamp": { "type": "date" },
+        "host": { "type": "keyword" },
+        "process": { "type": "keyword" },
+        "args": { "type": "text" },
+        "attack": { "type": "boolean" }
+      }
+    }
+  }
+} 

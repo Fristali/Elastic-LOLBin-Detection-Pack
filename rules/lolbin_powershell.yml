@@ -1,0 +1,28 @@
+# Placeholder for Sigma rule: PowerShell 
+title: Suspicious PowerShell Encoded Command
+id: 1a2b3c4d-0001-0000-0000-000000000001
+status: experimental
+description: Detects PowerShell execution with encoded command (LOLBin technique)
+author: Elastic LOLBin Pack
+logsource:
+  product: windows
+  service: security
+  category: process_creation
+detection:
+  selection:
+    process: 'powershell.exe'
+    args|contains: '-enc'
+  condition: selection
+fields:
+  - host
+  - process
+  - args
+  - attack
+falsepositives:
+  - Legitimate admin scripts using encoded commands
+level: high
+references:
+  - https://attack.mitre.org/techniques/T1059/001/
+  - https://docs.microsoft.com/en-us/powershell/
+mitre_attack:
+  - T1059.001 
