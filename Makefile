@@ -23,7 +23,7 @@ dashboard:
 
 test-rules:
 	@echo "[test-rules] Run Sigma/pytest harness"
-	pytest tests/ -v
+	python -m pytest tests/ -v
 
 clean-docker:
 	@echo "[clean-docker] Teardown all Docker containers and volumes (stub)"
