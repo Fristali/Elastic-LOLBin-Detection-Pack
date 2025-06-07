@@ -1,0 +1,18 @@
+title: ECS generic mapping (CI)
+description: Minimal field map so sigmac’s es-qs backend works in GitHub Actions
+logsource:
+  category: generic
+detection:
+  condition: selection
+  selection:
+    dummy: dummy          # never used – satisfies schema
+fieldmappings:
+  CommandLine      : "process.command_line"
+  Image            : "process.executable"
+  ParentImage      : "process.parent.executable"
+  Hostname         : "host.name"
+  ComputerName     : "host.name"
+  User             : "user.name"
+  EventID          : "event.code"
+  Channel          : "log.channel"
+  # add others later as your rules grow

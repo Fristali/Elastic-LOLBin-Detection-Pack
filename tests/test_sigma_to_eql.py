@@ -43,9 +43,11 @@ EVENTS = [
 ])
 def test_sigma_rule_hits(rule_path, expected_hits):
     # Convert Sigma rule to ES query DSL
-    result = subprocess.run([
-        "sigmac", "-t", "es-qs", rule_path
-    ], capture_output=True, text=True)
+    result = subprocess.run(
+    ["sigmac", "-t", "es-qs", "-c", "sigma_config.yml", rule_path],
+    capture_output=True,
+    text=True,
+)
     assert result.returncode == 0, f"sigmac failed: {result.stderr}"
     es_query = json.loads(result.stdout)
 
