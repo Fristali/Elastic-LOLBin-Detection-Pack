@@ -9,6 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -16,15 +17,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
-      - name: Install dependencies
+      - name: Install test tooling
         run: |
-          pip install pytest
-          # Add other pip packages here if needed (e.g., sigmac, etc)
-
-      - name: CI stub
-        run: echo "CI workflow stub."
+          python -m pip install --upgrade pip
+          # pytest for the harness, sigmatools brings the `sigmac` CLI
+          pip install pytest sigmatools
 
       - name: Run tests
         run: make test-rules
