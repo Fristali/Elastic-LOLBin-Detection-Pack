@@ -155,7 +155,7 @@ function Start-SystemCheck {
     if ($dockerExists) {
         # Check Docker Daemon
         try {
-            $dockerInfo = docker info 2>$null
+            $null = docker info 2>$null
             $dockerRunning = $LASTEXITCODE -eq 0
             Write-CheckResult -Name "Docker Daemon" -Passed $dockerRunning -Message $(if ($dockerRunning) { "Docker daemon is running" } else { "Docker daemon not running" }) -FixCommand "Start Docker Desktop"
         } catch {

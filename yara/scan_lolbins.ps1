@@ -87,7 +87,7 @@ function Test-YaraRule {
     param([string]$RuleFile)
     
     try {
-        $result = yara -c $RuleFile 2>&1
+        $null = yara -c $RuleFile 2>&1
         return $LASTEXITCODE -eq 0
     } catch {
         return $false
