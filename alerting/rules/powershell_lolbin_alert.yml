@@ -1,0 +1,125 @@
+# ElastAlert Rule: PowerShell LOLBin Detection
+# Triggers on suspicious PowerShell command line patterns
+
+name: PowerShell LOLBin Detection
+type: frequency
+index: logs-lolbin-*
+
+# Alert on any occurrence within 5 minutes
+num_events: 1
+timeframe:
+  minutes: 5
+
+# Filter for PowerShell LOLBin patterns
+filter:
+- terms:
+    process.name.keyword: ["powershell.exe", "pwsh.exe"]
+- bool:
+    should:
+      - match:
+          process.command_line: "-enc"
+      - match:
+          process.command_line: "-EncodedCommand"
+      - match:
+          process.command_line: "-WindowStyle Hidden"
+      - match:
+          process.command_line: "-w hidden"
+      - match:
+          process.command_line: "-NonInteractive"
+      - match:
+          process.command_line: "-noni"
+      - match:
+          process.command_line: "-nop"
+      - match:
+          process.command_line: "DownloadString"
+      - match:
+          process.command_line: "DownloadFile"
+      - match:
+          process.command_line: "WebClient"
+      - match:
+          process.command_line: "Invoke-WebRequest"
+      - match:
+          process.command_line: "IEX"
+      - match:
+          process.command_line: "Invoke-Expression"
+    minimum_should_match: 1
+
+# Alert destinations
+alert:
+  # Slack notification
+  - "slack"
+  # Email notification
+  - "email"
+  # PagerDuty for high severity
+  - "pagerduty"
+
+# Slack configuration
+slack_webhook_url: "{SLACK_WEBHOOK_URL}"
+slack_channel_override: "#security-alerts"
+slack_username_override: "LOLBin-Detector"
+slack_emoji_override: ":warning:"
+
+# Email configuration  
+email:
+  - "security@company.com"
+  - "soc@company.com"
+
+email_subject: "🚨 PowerShell LOLBin Activity Detected on {0}"
+email_subject_args:
+  - "host.name"
+
+# PagerDuty configuration (for critical alerts)
+pagerduty_service_key: "{PAGERDUTY_SERVICE_KEY}"
+pagerduty_client_name: "ElastAlert LOLBin Detection"
+
+# Severity-based routing
+alert_subject: "PowerShell LOLBin Detection - {0} on {1}"
+alert_subject_args:
+  - "process.name"
+  - "host.name"
+
+# Additional context
+description: "Suspicious PowerShell command line detected that matches known LOLBin abuse patterns"
+
+# Custom alert fields
+generate_kibana_link: true
+kibana_url: "http://kibana:5601"
+
+# Realert settings
+realert:
+  minutes: 30
+
+exponential_realert:
+  hours: 1
+
+# Include these fields in the alert
+include:
+  - "@timestamp"
+  - "host.name"
+  - "host.ip"
+  - "process.name"
+  - "process.command_line"
+  - "process.parent.name"
+  - "process.parent.command_line"
+  - "user.name"
+  - "user.domain"
+  - "event.severity"
+  - "rule.name"
+  - "mitre.technique"
+  - "mitre.tactic"
+
+# Top count for aggregation alerts
+top_count_keys:
+  - "host.name"
+  - "process.command_line"
+
+top_count_number: 5
+
+# Whitelist for known good processes (adjust as needed)
+blacklist:
+  - terms:
+      process.parent.name.keyword: ["vscode.exe", "code.exe"]
+  - terms:
+      user.name.keyword: ["SYSTEM", "LOCAL SERVICE"]
+  - match:
+      process.command_line: "Get-Help" 

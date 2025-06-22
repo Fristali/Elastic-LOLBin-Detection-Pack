@@ -1,0 +1,233 @@
+# Elastic LOLBin Detection Pack - Environment Configuration
+# Copy this file to .env and customize the values for your environment
+
+# =============================================================================
+# ELASTIC STACK CONFIGURATION
+# =============================================================================
+
+# Elasticsearch Configuration
+ELASTIC_VERSION=8.13.4
+ELASTIC_USERNAME=elastic
+ELASTIC_PASSWORD=your_secure_password_here_minimum_12_chars
+ELASTIC_CLUSTER_NAME=lolbin-cluster
+
+# Security Configuration
+ELASTIC_SECURITY_ENABLED=true
+ELASTIC_TLS_ENABLED=true
+ELASTIC_CERT_PATH=./certs
+ELASTIC_CA_PASSWORD=your_ca_password_here
+
+# Kibana Configuration
+KIBANA_ENCRYPTION_KEY=your_32_character_encryption_key
+KIBANA_SECURITY_ENABLED=true
+
+# Logstash Configuration
+LOGSTASH_MONITORING_ENABLED=true
+
+# =============================================================================
+# RESOURCE LIMITS & PERFORMANCE
+# =============================================================================
+
+# JVM Heap Sizes (adjust based on available RAM)
+# Production: Use 50% of available RAM, max 32GB
+ES_JAVA_OPTS=-Xms2g -Xmx2g
+LS_JAVA_OPTS=-Xms1g -Xmx1g
+
+# =============================================================================
+# ALERTING & INTEGRATION
+# =============================================================================
+
+# Slack Integration
+SLACK_WEBHOOK_URL=https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK
+SLACK_CHANNEL=#security-alerts
+SLACK_USERNAME=LOLBin-Detector
+
+# Email Notifications
+ALERT_EMAIL=security@yourcompany.com
+SMTP_HOST=smtp.yourcompany.com
+SMTP_PORT=587
+SMTP_USERNAME=alerts@yourcompany.com
+SMTP_PASSWORD=your_smtp_password
+
+# SOAR Integration
+SOAR_WEBHOOK_URL=https://your-soar-platform.com/api/webhooks/security
+SOAR_API_KEY=your_soar_api_key
+
+# =============================================================================
+# DEMO MODE SETTINGS
+# =============================================================================
+
+# Demo Mode (disables security for easy demonstration)
+DEMO_MODE=false
+SKIP_SECURITY=false
+
+# Quick Testing
+MINI_MODE=false
+GENERATE_SAMPLE_DATA=true
+
+# =============================================================================
+# LOGGING & MONITORING
+# =============================================================================
+
+# Log Levels
+ELASTICSEARCH_LOG_LEVEL=INFO
+KIBANA_LOG_LEVEL=INFO
+LOGSTASH_LOG_LEVEL=INFO
+FILEBEAT_LOG_LEVEL=INFO
+
+# Log Retention
+LOG_RETENTION_DAYS=30
+INDEX_RETENTION_DAYS=30
+
+# Monitoring
+MONITORING_ENABLED=true
+METRICS_COLLECTION=true
+
+# =============================================================================
+# NETWORK & CONNECTIVITY
+# =============================================================================
+
+# External Access (set to 0.0.0.0 to allow external connections)
+ELASTICSEARCH_HOST=127.0.0.1
+KIBANA_HOST=127.0.0.1
+
+# Custom Ports (change if defaults conflict)
+ELASTICSEARCH_PORT=9200
+ELASTICSEARCH_TRANSPORT_PORT=9300
+KIBANA_PORT=5601
+LOGSTASH_PORT=5044
+LOGSTASH_API_PORT=9600
+FILEBEAT_PORT=6060
+
+# =============================================================================
+# DATA GENERATION & SIMULATION
+# =============================================================================
+
+# Log Generation Settings
+SIMULATION_HOSTS=25
+SIMULATION_TOTAL_EVENTS=30000000
+SIMULATION_DAYS=1
+ATTACK_PERCENTAGE=1
+NEAR_MISS_PERCENTAGE=9
+BENIGN_PERCENTAGE=90
+
+# Attack Patterns
+ENABLE_POWERSHELL_ATTACKS=true
+ENABLE_CERTUTIL_ATTACKS=true
+ENABLE_WMI_ATTACKS=true
+ENABLE_CUSTOM_ATTACKS=false
+
+# =============================================================================
+# DEVELOPMENT & TESTING
+# =============================================================================
+
+# Testing Configuration
+RUN_INTEGRATION_TESTS=false
+SKIP_SLOW_TESTS=false
+COVERAGE_THRESHOLD=90
+
+# Development Features
+DEBUG_MODE=false
+VERBOSE_LOGGING=false
+PROFILING_ENABLED=false
+
+# =============================================================================
+# BACKUP & DISASTER RECOVERY
+# =============================================================================
+
+# Backup Configuration
+BACKUP_ENABLED=false
+BACKUP_LOCATION=/opt/backups/lolbin
+BACKUP_SCHEDULE=0 2 * * *
+BACKUP_RETENTION_DAYS=7
+
+# Snapshot Repository
+SNAPSHOT_REPOSITORY=backup_repo
+SNAPSHOT_PREFIX=lolbin_snapshot
+
+# =============================================================================
+# SECURITY HARDENING
+# =============================================================================
+
+# Certificate Configuration
+CERT_VALIDITY_DAYS=365
+CERT_KEY_SIZE=2048
+CERT_ORGANIZATION="Your Organization"
+CERT_COUNTRY=US
+CERT_STATE="Your State"
+CERT_CITY="Your City"
+
+# Access Control
+KIBANA_READONLY_USER=kibana_user
+KIBANA_READONLY_PASSWORD=readonly_password
+API_KEY_ENABLED=true
+
+# Audit Logging
+AUDIT_LOGGING_ENABLED=true
+AUDIT_LOG_INCLUDE_REQUEST_BODY=false
+
+# =============================================================================
+# THREAT INTELLIGENCE
+# =============================================================================
+
+# External Threat Feeds
+TI_FEED_ENABLED=false
+TI_FEED_URL=https://your-threat-intel-feed.com/api
+TI_API_KEY=your_threat_intel_api_key
+TI_REFRESH_INTERVAL=3600
+
+# IOC Enrichment
+IOC_ENRICHMENT_ENABLED=false
+VIRUSTOTAL_API_KEY=your_virustotal_api_key
+SHODAN_API_KEY=your_shodan_api_key
+
+# =============================================================================
+# COMPLIANCE & GOVERNANCE
+# =============================================================================
+
+# Data Classification
+DATA_CLASSIFICATION=INTERNAL
+DATA_RETENTION_POLICY=STANDARD
+GDPR_COMPLIANCE=false
+
+# Audit Requirements
+AUDIT_TRAIL_ENABLED=true
+CHANGE_TRACKING_ENABLED=true
+ACCESS_LOGGING_ENABLED=true
+
+# =============================================================================
+# TROUBLESHOOTING & DEBUG
+# =============================================================================
+
+# Debug Settings (for troubleshooting only)
+ENABLE_DEBUG_ENDPOINTS=false
+ALLOW_DANGEROUS_SETTINGS=false
+BYPASS_SECURITY_CHECKS=false
+
+# Memory and Performance Debugging
+ENABLE_MEMORY_PROFILING=false
+ENABLE_SLOW_QUERY_LOG=false
+ENABLE_CLUSTER_STATS=false
+
+# =============================================================================
+# NOTES
+# =============================================================================
+# 
+# Security Best Practices:
+# 1. Change all default passwords
+# 2. Use strong, unique encryption keys
+# 3. Enable TLS for all communications
+# 4. Regularly rotate credentials
+# 5. Monitor access logs
+# 
+# Performance Tips:
+# 1. Adjust heap sizes based on available RAM
+# 2. Use SSD storage for better performance
+# 3. Monitor resource usage regularly
+# 4. Scale horizontally for larger deployments
+# 
+# Troubleshooting:
+# 1. Check logs in docker logs <container>
+# 2. Verify network connectivity between containers
+# 3. Ensure sufficient disk space and memory
+# 4. Review firewall and security settings 

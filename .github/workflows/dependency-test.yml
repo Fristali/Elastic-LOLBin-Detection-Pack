@@ -1,0 +1,297 @@
+name: Dependency Conflict Detection
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths: 
+      - 'requirements.txt'
+      - 'constraints.txt'
+      - '.github/workflows/dependency-test.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'requirements.txt'
+      - 'constraints.txt'
+  schedule:
+    # Run weekly on Sundays at 2 AM UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch:
+
+jobs:
+  dependency-matrix-test:
+    name: Test Dependencies (${{ matrix.os }}, Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+        include:
+          # Test Python 3.13 on Ubuntu only (cutting edge)
+          - os: ubuntu-latest
+            python-version: '3.13'
+        exclude:
+          # Skip macOS on older Python versions to reduce CI time
+          - os: macos-latest
+            python-version: '3.8'
+          - os: macos-latest
+            python-version: '3.9'
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v5
+      with:
+        python-version: ${{ matrix.python-version }}
+        cache: 'pip'
+        cache-dependency-path: |
+          requirements.txt
+          constraints.txt
+
+    - name: Upgrade pip and install tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install pipdeptree pip-tools
+
+    - name: Install dependencies with constraints
+      run: |
+        pip install -r requirements.txt -c constraints.txt
+
+    - name: Check for dependency conflicts
+      run: |
+        pip check
+
+    - name: Generate dependency tree
+      run: |
+        pipdeptree --packages pysigma,elasticsearch,pytest,black,flake8,isort,jsonschema > dependency-tree-${{ matrix.os }}-py${{ matrix.python-version }}.txt
+
+    - name: Upload dependency tree as artifact
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: dependency-tree-${{ matrix.os }}-py${{ matrix.python-version }}
+        path: dependency-tree-${{ matrix.os }}-py${{ matrix.python-version }}.txt
+        retention-days: 30
+
+    - name: Test core functionality
+      run: |
+        python -c "import pysigma; print(f'pySigma version: {pysigma.__version__}')"
+        python -c "import elasticsearch; print(f'Elasticsearch client version: {elasticsearch.__version__}')"
+        python -c "import pytest; print(f'Pytest version: {pytest.__version__}')"
+
+    - name: Validate constraints are being used
+      run: |
+        pip show pysigma | grep Version
+        pip show elasticsearch | grep Version
+        pip show pytest | grep Version
+
+  dependency-security-scan:
+    name: Security Scan Dependencies
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt -c constraints.txt
+        pip install safety bandit
+
+    - name: Run safety check on dependencies
+      run: |
+        safety check --json --output safety-report.json || true
+
+    - name: Run bandit security scan
+      run: |
+        bandit -r scripts/ -f json -o bandit-report.json || true
+
+    - name: Upload security reports
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: security-reports
+        path: |
+          safety-report.json
+          bandit-report.json
+        retention-days: 30
+
+  constraint-validation:
+    name: Validate Constraints File
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install pip-tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install pip-tools
+
+    - name: Test constraint resolution
+      run: |
+        # Test that constraints.txt can resolve requirements.txt
+        pip-compile --dry-run --constraint constraints.txt requirements.txt
+
+    - name: Check for version consistency
+      run: |
+        # Ensure versions in constraints.txt match those in requirements.txt
+        python -c "
+        import re
+        
+        def parse_requirements(file_path):
+            with open(file_path, 'r') as f:
+                lines = f.readlines()
+            
+            packages = {}
+            for line in lines:
+                line = line.strip()
+                if line and not line.startswith('#'):
+                    match = re.match(r'^([a-zA-Z0-9_-]+)==([0-9.]+)', line)
+                    if match:
+                        packages[match.group(1).lower()] = match.group(2)
+            return packages
+        
+        req_packages = parse_requirements('requirements.txt')
+        const_packages = parse_requirements('constraints.txt')
+        
+        inconsistent = []
+        for pkg, version in req_packages.items():
+            if pkg in const_packages and const_packages[pkg] != version:
+                inconsistent.append(f'{pkg}: requirements.txt={version}, constraints.txt={const_packages[pkg]}')
+        
+        if inconsistent:
+            print('Version inconsistencies found:')
+            for item in inconsistent:
+                print(f'  {item}')
+            exit(1)
+        else:
+            print('All versions are consistent between requirements.txt and constraints.txt')
+        "
+
+  update-notification:
+    name: Check for Updates
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install pip-tools
+      run: |
+        python -m pip install --upgrade pip
+        pip install pip-tools
+
+    - name: Check for dependency updates
+      run: |
+        pip-compile --upgrade --dry-run requirements.txt > potential-updates.txt
+        
+        # Check if updates are available
+        if grep -q "would be upgraded" potential-updates.txt; then
+          echo "::warning::Dependency updates are available. Consider reviewing and updating."
+          cat potential-updates.txt
+        else
+          echo "All dependencies are up to date."
+        fi
+
+    - name: Upload update report
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: potential-updates
+        path: potential-updates.txt
+        retention-days: 7
+
+  test-import-functionality:
+    name: Test Core Import Functionality
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt -c constraints.txt
+
+    - name: Test Sigma rule processing
+      run: |
+        python -c "
+        from pysigma.backends.elasticsearch import LuceneBackend
+        from pysigma.processing.transformations import FieldMappingTransformation
+        from pysigma.rule import SigmaRule
+        import json
+        
+        # Test basic Sigma rule processing
+        rule_yaml = '''
+        title: Test Rule
+        logsource:
+          product: windows
+          service: security
+        detection:
+          selection:
+            EventID: 4624
+          condition: selection
+        '''
+        
+        rule = SigmaRule.from_yaml(rule_yaml)
+        backend = LuceneBackend()
+        result = backend.convert(rule)
+        print(f'Converted rule: {result[0]}')
+        print('✓ Sigma rule processing works correctly')
+        "
+
+    - name: Test Elasticsearch client
+      run: |
+        python -c "
+        from elasticsearch import Elasticsearch
+        
+        # Test client creation (without connecting)
+        es = Elasticsearch(['localhost:9200'], verify_certs=False)
+        print(f'✓ Elasticsearch client created successfully: {type(es)}')
+        "
+
+    - name: Test JSON schema validation
+      run: |
+        python -c "
+        import jsonschema
+        
+        schema = {
+            'type': 'object',
+            'properties': {
+                'name': {'type': 'string'},
+                'age': {'type': 'number'}
+            }
+        }
+        
+        # Valid data
+        data = {'name': 'test', 'age': 25}
+        jsonschema.validate(data, schema)
+        print('✓ JSON schema validation works correctly')
+        "
+
+    - name: Run basic tests
+      run: |
+        pytest tests/test_sigma_to_eql.py --collect-only -v 

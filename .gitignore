@@ -64,6 +64,7 @@ Pipfile.lock
 
 # Logs
 *.log
+.logs/
 
 # Docker secrets
 **/.env

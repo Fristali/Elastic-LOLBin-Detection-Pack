@@ -1,0 +1,286 @@
+# Pre-commit hooks configuration for Elastic LOLBin Detection Pack
+# Ensures code quality, security, and consistency
+
+repos:
+  # Python code formatting and linting
+  - repo: https://github.com/psf/black
+    rev: 23.12.1
+    hooks:
+      - id: black
+        language_version: python3
+        args: [--line-length=88]
+
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+        args: [--profile=black, --line-length=88]
+
+  - repo: https://github.com/pycqa/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+        args: 
+          - --max-line-length=88
+          - --extend-ignore=E203,W503
+          - --exclude=.git,__pycache__,build,dist,.venv
+
+  - repo: https://github.com/pycqa/bandit
+    rev: 1.7.6
+    hooks:
+      - id: bandit
+        args: ['-r', '.', '-f', 'json', '-o', 'bandit-report.json']
+        exclude: tests/
+
+  # YAML formatting
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        types: [yaml]
+        exclude: \.github/workflows/
+
+  # General file checks
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.5.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: \.md$
+      - id: end-of-file-fixer
+        exclude: \.md$
+      - id: check-yaml
+        args: [--allow-multiple-documents]
+      - id: check-json
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=1000]
+      - id: debug-statements
+      - id: detect-private-key
+        exclude: ^(certs/|tests/fixtures/)
+      - id: check-case-conflict
+      - id: check-docstring-first
+      - id: check-executables-have-shebangs
+      - id: check-shebang-scripts-are-executable
+
+  # PowerShell script analysis
+  - repo: local
+    hooks:
+      - id: powershell-scriptanalyzer
+        name: PowerShell Script Analyzer
+        entry: pwsh
+        args: 
+          - -Command
+          - |
+            if (Get-Module -ListAvailable -Name PSScriptAnalyzer) {
+              Get-ChildItem -Path . -Filter *.ps1 -Recurse | 
+              ForEach-Object { 
+                $results = Invoke-ScriptAnalyzer -Path $_.FullName -Severity Warning
+                if ($results) { 
+                  Write-Output "Issues found in $($_.FullName):"
+                  $results | Format-Table -AutoSize
+                  exit 1
+                }
+              }
+            } else {
+              Write-Output "PSScriptAnalyzer not installed. Skipping PowerShell analysis."
+            }
+        language: system
+        files: \.ps1$
+        pass_filenames: false
+
+  # Docker file linting
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint-docker
+        args: [--ignore=DL3008, --ignore=DL3009, --ignore=DL3015]
+
+  # Security scanning for secrets
+  - repo: https://github.com/Yelp/detect-secrets
+    rev: v1.4.0
+    hooks:
+      - id: detect-secrets
+        args: ['--baseline', '.secrets.baseline']
+        exclude: ^(tests/|\.github/|docs/.*\.md$)
+
+  # Markdown linting
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.38.0
+    hooks:
+      - id: markdownlint
+        args: [--fix]
+        exclude: ^(CHANGELOG\.md|docs/.*\.md)$
+
+  # YAML security scanning
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: [-c=.yamllint.yml]
+
+  # JSON formatting and validation
+  - repo: https://github.com/pre-commit/mirrors-prettier
+    rev: v4.0.0-alpha.8
+    hooks:
+      - id: prettier
+        types: [json]
+        exclude: ^(package-lock\.json|\.vscode/)
+
+  # Python security and dependency scanning
+  - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
+    rev: v1.3.2
+    hooks:
+      - id: python-safety-dependencies-check
+
+  # Commit message validation
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v3.0.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: [optional-scope]
+
+  # License header checking
+  - repo: https://github.com/Lucas-C/pre-commit-hooks
+    rev: v1.5.5
+    hooks:
+      - id: insert-license
+        files: \.py$
+        args:
+          - --license-filepath
+          - scripts/license_header.txt
+          - --comment-style
+          - "#"
+
+  # Custom hooks for project-specific checks
+  - repo: local
+    hooks:
+      # Validate Sigma rules
+      - id: validate-sigma-rules
+        name: Validate Sigma Rules
+        entry: python
+        args: [-c, "
+          import yaml, sys, os
+          for root, dirs, files in os.walk('rules'):
+              for file in files:
+                  if file.endswith('.yml') or file.endswith('.yaml'):
+                      filepath = os.path.join(root, file)
+                      try:
+                          with open(filepath, 'r') as f:
+                              yaml.safe_load(f)
+                          print(f'✓ {filepath}')
+                      except Exception as e:
+                          print(f'✗ {filepath}: {e}')
+                          sys.exit(1)
+          "]
+        language: system
+        files: ^rules/.*\.(yml|yaml)$
+        pass_filenames: false
+
+      # Validate YARA rules
+      - id: validate-yara-rules
+        name: Validate YARA Rules
+        entry: bash
+        args: 
+          - -c
+          - |
+            for file in yara/*.yar yara/*.yara; do
+              if [ -f "$file" ]; then
+                if command -v yara >/dev/null 2>&1; then
+                  if yara -c "$file" 2>/dev/null; then
+                    echo "✓ $file"
+                  else
+                    echo "✗ $file: Invalid YARA syntax"
+                    exit 1
+                  fi
+                else
+                  echo "⚠ YARA not installed, skipping validation of $file"
+                fi
+              fi
+            done
+        language: system
+        files: ^yara/.*\.(yar|yara)$
+        pass_filenames: false
+
+      # Check for hardcoded credentials
+      - id: check-credentials
+        name: Check for Hardcoded Credentials
+        entry: bash
+        args:
+          - -c
+          - |
+            if grep -r -i --exclude-dir=.git --exclude-dir=.pre-commit-hooks \
+                "password.*=.*['\"][^'\"]*['\"]" . && \
+               grep -r -i --exclude-dir=.git --exclude-dir=.pre-commit-hooks \
+                "secret.*=.*['\"][^'\"]*['\"]" . && \
+               grep -r -i --exclude-dir=.git --exclude-dir=.pre-commit-hooks \
+                "api.*key.*=.*['\"][^'\"]*['\"]" .; then
+              echo "Potential hardcoded credentials found!"
+              exit 1
+            fi
+        language: system
+        pass_filenames: false
+        exclude: ^(env-example|\.env\.example|tests/|docs/)
+
+      # Validate Docker Compose files
+      - id: validate-docker-compose
+        name: Validate Docker Compose
+        entry: docker-compose
+        args: [-f, docker/docker-compose.yml, config, --quiet]
+        language: system
+        files: docker-compose\.yml$
+        pass_filenames: false
+
+      # Check for TODO/FIXME comments before commit
+      - id: check-todos
+        name: Check for TODO/FIXME
+        entry: bash
+        args:
+          - -c
+          - |
+            if grep -r --exclude-dir=.git "TODO\|FIXME\|XXX" . --include="*.py" --include="*.ps1" --include="*.yml"; then
+              echo "TODO/FIXME comments found. Please address before committing."
+              exit 1
+            fi
+        language: system
+        pass_filenames: false
+        stages: [manual]
+
+      # Validate EQL queries syntax (if eql package available)
+      - id: validate-eql-queries
+        name: Validate EQL Queries
+        entry: python
+        args:
+          - -c
+          - |
+            try:
+                import eql
+                import re
+                import sys
+                
+                # Read EQL queries from markdown files
+                with open('eql/lolbin_eql_queries.md', 'r') as f:
+                    content = f.read()
+                
+                # Extract EQL queries from code blocks
+                queries = re.findall(r'```eql\n(.*?)\n```', content, re.DOTALL)
+                
+                for i, query in enumerate(queries):
+                    query = query.strip()
+                    if query:
+                        try:
+                            eql.parse_query(query)
+                            print(f'✓ EQL Query {i+1}')
+                        except Exception as e:
+                            print(f'✗ EQL Query {i+1}: {e}')
+                            sys.exit(1)
+            except ImportError:
+                print('⚠ EQL package not installed, skipping validation')
+        language: system
+        files: ^eql/.*\.md$
+        pass_filenames: false
+
+# Configuration files for tools
+default_stages: [commit]
+fail_fast: false
+minimum_pre_commit_version: 3.0.0 

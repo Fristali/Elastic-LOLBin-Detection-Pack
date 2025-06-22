@@ -1,0 +1,24 @@
+# Core dependencies
+requests==2.32.3
+urllib3==1.26.18
+pyyaml==6.0.2
+jinja2==3.1.6
+
+# Testing dependencies
+pytest==7.4.4
+pytest-cov==4.1.0
+
+# Sigma rule processing
+pysigma==0.11.23
+pysigma-backend-elasticsearch==1.1.6
+
+# Elasticsearch client
+elasticsearch==7.10.1
+
+# Security and validation
+jsonschema==4.23.0
+
+# Development tools
+black==23.12.1
+isort==5.13.2
+flake8==6.1.0 

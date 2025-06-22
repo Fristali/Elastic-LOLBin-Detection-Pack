@@ -1,0 +1,83 @@
+# ElastAlert2 Configuration for LOLBin Detection Pack
+# Real-time alerting for suspicious LOLBin activity
+
+# Global settings
+rules_folder: /opt/elastalert/rules
+run_every:
+  minutes: 1
+
+buffer_time:
+  minutes: 15
+
+es_host: elasticsearch
+es_port: 9200
+es_username: elastic
+es_password: changeme
+
+# Security settings (if TLS enabled)
+use_ssl: false
+verify_certs: false
+ca_certs: /opt/elastalert/certs/ca.crt
+
+# Logging
+writeback_index: elastalert_status
+writeback_alias: elastalert_alerts
+
+alert_time_limit:
+  days: 2
+
+# Email settings
+smtp_host: localhost
+smtp_port: 25
+smtp_ssl: false
+from_addr: elastalert@company.com
+
+# Slack settings (override in rules)
+slack_webhook_url: null
+slack_username_override: ElastAlert
+slack_channel_override: "#security-alerts"
+
+# Custom fields to include in alerts
+alert_text: |
+  ## LOLBin Detection Alert
+  
+  **Timestamp**: {0}
+  **Host**: {1}
+  **Process**: {2}
+  **Command Line**: {3}
+  **Detection Rule**: {4}
+  **Severity**: {5}
+  
+  **Event Details**:
+  ```
+  {6}
+  ```
+  
+  **Recommended Actions**:
+  - Investigate the process execution context
+  - Review parent/child process relationships
+  - Check for network connections from this process
+  - Examine file system activity
+  - Consider containment if malicious activity confirmed
+
+alert_text_args:
+  - "@timestamp"
+  - "host.name"
+  - "process.name" 
+  - "process.command_line"
+  - "rule.name"
+  - "event.severity"
+  - "message"
+
+# Include additional fields in alert
+include:
+  - "@timestamp"
+  - "host.name"
+  - "process.name"
+  - "process.command_line"
+  - "process.parent.name"
+  - "user.name"
+  - "rule.name"
+  - "event.severity"
+  - "mitre.technique"
+  - "mitre.tactic" 
