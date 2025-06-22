@@ -1,0 +1,289 @@
+# Filebeat Configuration for Elastic LOLBin Detection Pack
+# Collects and forwards logs to Elasticsearch
+
+# Global settings
+name: filebeat-lolbin
+tags: ["lolbin", "security", "detection"]
+
+# File inputs
+filebeat.inputs:
+# LOLBin generated logs
+- type: log
+  enabled: true
+  paths:
+    - /var/log/lolbin/*.ndjson
+    - /usr/share/filebeat/logs/*.ndjson
+  json.keys_under_root: true
+  json.add_error_key: true
+  fields:
+    logtype: lolbin_events
+    dataset: process_execution
+  fields_under_root: true
+  multiline.pattern: '^\{'
+  multiline.negate: true
+  multiline.match: after
+  close_inactive: 5m
+  ignore_older: 24h
+  
+# YARA scan results
+- type: log
+  enabled: true
+  paths:
+    - /var/log/yara_*.json
+    - /tmp/yara_*.json
+  json.keys_under_root: true
+  json.add_error_key: true
+  fields:
+    logtype: yara_results
+    scanner: yara_lolbin
+  fields_under_root: true
+  close_inactive: 5m
+  
+# YARA scan logs
+- type: log
+  enabled: true
+  paths:
+    - /var/log/yara_scan.log
+  fields:
+    logtype: yara_scan_log
+    scanner: yara_lolbin
+  fields_under_root: true
+  multiline.pattern: '^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}'
+  multiline.negate: true
+  multiline.match: after
+  
+# Docker container logs
+- type: docker
+  enabled: true
+  containers.ids: '*'
+  containers.stream: all
+  json.keys_under_root: true
+  json.add_error_key: true
+  fields:
+    logtype: docker_logs
+  fields_under_root: true
+
+# Elastic Stack logs
+- type: log
+  enabled: true
+  paths:
+    - /var/log/elasticsearch/*.log
+    - /usr/share/elasticsearch/logs/*.log
+  fields:
+    logtype: elasticsearch_logs
+    component: elasticsearch
+  fields_under_root: true
+  multiline.pattern: '^\[\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}'
+  multiline.negate: true
+  multiline.match: after
+
+- type: log
+  enabled: true
+  paths:
+    - /var/log/kibana/*.log
+    - /usr/share/kibana/logs/*.log
+  fields:
+    logtype: kibana_logs
+    component: kibana
+  fields_under_root: true
+  
+- type: log
+  enabled: true
+  paths:
+    - /var/log/logstash/*.log
+    - /usr/share/logstash/logs/*.log
+  fields:
+    logtype: logstash_logs
+    component: logstash
+  fields_under_root: true
+
+# System logs (if available)
+- type: syslog
+  enabled: true
+  protocol.udp:
+    host: "0.0.0.0:514"
+  fields:
+    logtype: syslog
+  fields_under_root: true
+
+# Windows Event Logs (if running on Windows)
+- type: winlogbeat
+  enabled: false  # Enable if running on Windows
+  event_logs:
+    - name: Security
+      processors:
+        - drop_event:
+            when:
+              not:
+                equals:
+                  winlog.event_id: [4688, 4689, 4648, 4625, 4624]
+    - name: System
+    - name: Application
+
+# Processors for data enrichment
+processors:
+# Add host metadata
+- add_host_metadata:
+    when.not.contains.tags: forwarded
+    
+# Add Docker metadata for containerized logs
+- add_docker_metadata:
+    host: "unix:///var/run/docker.sock"
+    match_fields: ["container.id"]
+    
+# Add Kubernetes metadata if in K8s environment  
+- add_kubernetes_metadata:
+    host: ${NODE_NAME}
+    matchers:
+    - logs_path:
+        logs_path: "/var/log/containers/"
+
+# Timestamp parsing and normalization
+- timestamp:
+    field: "@timestamp"
+    layouts:
+      - '2006-01-02T15:04:05.000Z'
+      - '2006-01-02 15:04:05'
+    test:
+      - '2024-01-01T12:00:00.000Z'
+
+# Field renaming for ECS compliance
+- rename:
+    fields:
+      - from: "log.file.path"
+        to: "file.path"
+      - from: "host.hostname" 
+        to: "host.name"
+    ignore_missing: true
+
+# Drop unnecessary fields
+- drop_fields:
+    fields: ["ecs", "agent", "input", "log.offset", "log.file"]
+    ignore_missing: true
+
+# Add event classification
+- script:
+    lang: javascript
+    id: classify_events
+    source: >
+      function process(event) {
+        var process_name = event.Get("process.name");
+        var command_line = event.Get("process.command_line");
+        
+        if (process_name && command_line) {
+          // Classify LOLBin events
+          if (process_name.match(/powershell\.exe|pwsh\.exe/i)) {
+            event.Put("event.category", "process");
+            event.Put("event.type", "start");
+            
+            if (command_line.match(/-enc|-encodedcommand|-windowstyle\s+hidden/i)) {
+              event.Put("event.severity", "high");
+              event.Put("threat.tactic", "execution");
+            }
+          } else if (process_name.match(/certutil\.exe/i)) {
+            event.Put("event.category", "process");
+            event.Put("event.type", "start");
+            
+            if (command_line.match(/-urlcache|-decode|-split/i)) {
+              event.Put("event.severity", "medium");
+              event.Put("threat.tactic", "defense_evasion");
+            }
+          } else if (process_name.match(/wmic\.exe|wmiprvse\.exe/i)) {
+            event.Put("event.category", "process");
+            event.Put("event.type", "start");
+            
+            if (command_line.match(/process\s+call\s+create|spawn/i)) {
+              event.Put("event.severity", "medium");
+              event.Put("threat.tactic", "execution");
+            }
+          }
+        }
+      }
+
+# Output configuration
+output.elasticsearch:
+  hosts: ["${ELASTICSEARCH_HOSTS:elasticsearch:9200}"]
+  username: "${ELASTICSEARCH_USERNAME:elastic}"
+  password: "${ELASTICSEARCH_PASSWORD:changeme}"
+  
+  # Index templates
+  template.settings:
+    index.number_of_shards: 1
+    index.number_of_replicas: 0
+    index.refresh_interval: 5s
+    
+  # Index patterns
+  indices:
+    - index: "logs-lolbin-%{+yyyy.MM.dd}"
+      when.equals:
+        logtype: "lolbin_events"
+    - index: "yara-scans-%{+yyyy.MM.dd}"
+      when.equals:
+        logtype: "yara_results"
+    - index: "yara-logs-%{+yyyy.MM.dd}"
+      when.equals:
+        logtype: "yara_scan_log"
+    - index: "elastic-stack-logs-%{+yyyy.MM.dd}"
+      when.or:
+        - equals:
+            logtype: "elasticsearch_logs"
+        - equals:
+            logtype: "kibana_logs"
+        - equals:
+            logtype: "logstash_logs"
+    - index: "system-logs-%{+yyyy.MM.dd}"
+      when.or:
+        - equals:
+            logtype: "syslog"
+        - equals:
+            logtype: "docker_logs"
+
+  # Pipeline for additional processing
+  pipeline: "filebeat-lolbin-pipeline"
+
+# Alternative output to Logstash (if preferred)
+#output.logstash:
+#  hosts: ["logstash:5044"]
+#  compression_level: 3
+#  bulk_max_size: 2048
+
+# Logging configuration
+logging.level: info
+logging.to_files: true
+logging.files:
+  path: /var/log/filebeat
+  name: filebeat.log
+  keepfiles: 7
+  permissions: 0644
+  
+# Monitoring
+monitoring:
+  enabled: true
+  elasticsearch:
+    hosts: ["${ELASTICSEARCH_HOSTS:elasticsearch:9200}"]
+    username: "${ELASTICSEARCH_USERNAME:elastic}"
+    password: "${ELASTICSEARCH_PASSWORD:changeme}"
+
+# Security settings (if TLS enabled)
+output.elasticsearch.ssl:
+  enabled: ${ELASTIC_TLS_ENABLED:false}
+  certificate_authorities: ["/usr/share/filebeat/config/certs/ca.crt"]
+  certificate: "/usr/share/filebeat/config/certs/filebeat.crt"
+  key: "/usr/share/filebeat/config/certs/filebeat.key"
+  verification_mode: "certificate"
+
+# HTTP endpoint for health checks
+http:
+  enabled: true
+  host: 0.0.0.0
+  port: 5066
+
+# Queue configuration for high throughput
+queue.mem:
+  events: 4096
+  flush.min_events: 512
+  flush.timeout: 1s
+
+# Filebeat modules (disable unused ones)
+filebeat.config.modules:
+  enabled: false 
