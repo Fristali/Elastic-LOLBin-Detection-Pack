@@ -110,15 +110,18 @@ dashboard:
 	fi
 
 test-rules:
-	@echo "[test-rules] Running Sigma rule tests..."
+	@echo "[test-rules] Installing dependencies and running Sigma rule tests..."
+	@pip install -r requirements.txt -c constraints.txt
 	@python -m pytest tests/test_sigma_to_eql.py -v
 
 test-int:
-	@echo "[test-int] Running integration tests..."
+	@echo "[test-int] Installing dependencies and running integration tests..."
+	@pip install -r requirements.txt -c constraints.txt
 	@RUN_INTEGRATION_TESTS=1 python -m pytest tests/ -v -m integration
 
 test: test-rules
 	@echo "[test] Running all tests..."
+	@pip install -r requirements.txt -c constraints.txt
 	@python -m pytest tests/ -v --cov=. --cov-report=html
 
 clean-docker:
